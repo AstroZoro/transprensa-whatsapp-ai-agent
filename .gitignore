@@ -1,0 +1,52 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# n8n / exported production artifacts
+credentials.json
+**/credentials*.json
+**/*production*.json
+**/*prod*.json
+
+# Browser automation session state
+storageState.json
+storage-state.json
+**/storageState*.json
+**/storage-state*.json
+**/playwright/.auth/
+**/.auth/
+
+# Local data / logs
+*.log
+logs/
+*.sqlite
+*.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary / generated files
+tmp/
+temp/
+coverage/
+dist/
+build/
